@@ -4,7 +4,7 @@ class HighSchoolStudent(Student):
     # added parking and club attributes
     def __init__(self, name, grade, classes,
         has_parking_privileges=False, clubs=None):
-
+        # need super to define attributes?
         super().__init__(name, grade, classes)
         self.has_parking_privileges = has_parking_privileges
         self.clubs = clubs if clubs is not None else []
