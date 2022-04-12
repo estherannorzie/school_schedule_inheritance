@@ -1,6 +1,7 @@
 from .student import Student
 
 class HighSchoolStudent(Student):
+    # added parking and club attributes
     def __init__(self, name, grade, classes,
         has_parking_privileges=False, clubs=None):
 

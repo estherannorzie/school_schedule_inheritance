@@ -9,7 +9,7 @@ class MiddleSchoolStudent(Student):
     
     def summary(self):
         student_summary = super().summary()
-        transporation_message = self.display_transporation
+        transporation_message = self.display_transporation()
         return "\n".join((student_summary, transporation_message))
     
     def display_transporation(self):
